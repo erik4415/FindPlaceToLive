@@ -222,6 +222,7 @@ function createBadMark(place) {
   var placeLoc = place.geometry.location;
   var marker = new google.maps.Marker({
     map: map,
+    clickable: false,
     position: place.geometry.location,
     icon: 'http://maps.google.com/mapfiles/ms/icons/red-dot.png'
   });
